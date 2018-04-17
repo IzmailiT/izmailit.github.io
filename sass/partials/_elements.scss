@@ -25,6 +25,16 @@
     width: 80%;
 }
 
+.select-company {
+    float: right;
+    margin-top: -10px;
+    
+    @include max-screen($break-1280) {
+        //display: contents;
+        margin-top: 35px;
+    }
+}
+
 .metric-inline {
 	@include border-radius(3px);
 	
