@@ -11,6 +11,20 @@
 	}
 }
 
+.list-plan-details {
+    & > li {
+        padding: 5px 0;
+    }
+}
+
+.green-icon {
+    color: #7ED321;
+}
+
+.dispatch-info {
+    width: 80%;
+}
+
 .metric-inline {
 	@include border-radius(3px);
 	
