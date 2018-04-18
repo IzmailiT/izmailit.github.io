@@ -35,6 +35,47 @@
     }
 }
 
+.kwc-text {
+    border-radius: 5px;
+    border: 3px solid #9b59b6;
+    color: #8e44ad;
+    background-color: rgba(155, 89, 182, .5);
+}
+
+span.kwc-outer-tail {
+    border-top: 15px solid #9b59b6 !important;
+}
+
+span.kwc-inner-tail {
+    border-top: 11px solid #caa8d7 !important;
+}
+
+.level-two {
+    margin-left: 20px;
+}
+
+#left-spisok {
+    min-height: 100px !important;
+}
+
+#right-spisok {
+    height: 650px;
+    //float: right;
+    //width: 80% !important;
+}
+
+.move-buttons {
+    @include min-screen($break-medium) {
+        position: absolute;
+        bottom: 0;
+        
+        & > .form-group > .btn {
+            margin-top: 10px;
+            width: 90px !important;
+        }
+    }
+}
+
 .metric-inline {
 	@include border-radius(3px);
 	
