@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Phoenix | Рассылки</title>
+	<title>Phoenix | Настройки</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -78,15 +78,15 @@
 		<!-- END NAVBAR -->
 		<!-- LEFT SIDEBAR -->
 		<div id="left-sidebar" class="sidebar">
-			<button type="button" class="btn btn-xs btn-link btn-toggle-fullwidth" style="left: 220px;">
+			<button type="button" class="btn btn-xs btn-link btn-toggle-fullwidth">
 				<span class="sr-only">Toggle Fullwidth</span>
 				<i class="fa fa-angle-left"></i>
 			</button>
 			<div class="sidebar-scroll">
 				<div class="user-account">
-					<div class="img-responsive img-circle user-photo" style="background: url(assets/img/user.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;"></div>
+					<div class="img-responsive img-circle user-photo" style="background: url(assets/img/Admin.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;"></div>
 					<div class="dropdown">
-						<a href="#" class="dropdown-toggle user-name" data-toggle="dropdown"> <h3><strong>User</strong></h3> <i class="fa fa-caret-down"></i></a>
+						<a href="#" class="dropdown-toggle user-name" data-toggle="dropdown"> <h3><strong>Administrator</strong></h3> <i class="fa fa-caret-down"></i></a>
 						<ul class="dropdown-menu dropdown-menu-right account">
 							<li><a href="#">Мой профиль</a></li>
 							<li><a href="#">Рассылки</a></li>
@@ -98,11 +98,11 @@
 				</div>
 				<nav id="left-sidebar-nav" class="sidebar-nav">
 					<ul id="main-menu" class="metismenu">
-						<li class=""><a href="client-index.html"><i class="lnr lnr-users"></i> <span>Главная</span></a></li>
-						<li class=""><a href="client-new-disp.html"><i class="lnr lnr-plus-circle"></i> <span>Новая рассылка</span></a></li>
-						<li class=""><a href="client-dispatches.html"><i class="lnr lnr-bullhorn"></i> <span>Рассылки</span></a></li>
-						<li class=""><a href="addr-book.html"><i class="lnr lnr-book"></i> <span>Адресная книга</span></a></li>
-						<li class=""><a href="client-charts.html"><i class="lnr lnr-chart-bars"></i> <span>Статистика</span></a></li>
+						<li class=""><a href="#"><i class="lnr lnr-users"></i> <span>Пользователи</span></a></li>
+						<li class=""><a href="#"><i class="lnr lnr-apartment"></i> <span>Предприятия</span></a></li>
+						<li class="">
+							<a href="#"><i class="lnr lnr-chart-bars"></i> <span>Статистика</span></a>
+						</li>
 						<li class="active"><a href="#"><i class="lnr lnr-cog"></i> <span>Настройки</span></a></li>
 					</ul>
 				</nav>
@@ -113,8 +113,8 @@
 		<!-- MAIN CONTENT -->
 		<div id="main-content">
 			<div class="container-fluid">
-
-	        </div>
+			
+		    </div>
 		</div>
 		<!-- END MAIN CONTENT -->
 		<div class="clearfix"></div>
@@ -164,25 +164,6 @@
 		sparklineNumberChart();
 
 
-		// traffic sources
-		var dataPie = {
-			series: [45, 25, 30]
-		};
-
-		var labels = ['Раз', 'Два', 'Три'];
-		var sum = function(a, b) {
-			return a + b;
-		};
-
-		new Chartist.Pie('#demo-pie-chart', dataPie, {
-			height: "270px",
-			labelInterpolationFnc: function(value, idx) {
-				var percentage = Math.round(value / dataPie.series.reduce(sum) * 100) + '%';
-				return labels[idx] + ' (' + percentage + ')';
-			}
-		});
-
-
 		// progress bars
 		$('.progress .progress-bar').progressbar({
 			display_text: 'none'
@@ -197,7 +178,7 @@
 		};
 
 		var options = {
-			height: "200px",
+			height: "150px",
 			showPoint: true,
 			showArea: true,
 			axisX: {
@@ -216,7 +197,7 @@
 				}),
 				Chartist.plugins.ctAxisTitle({
 					axisX: {
-						axisTitle: 'Day',
+						axisTitle: 'Дни',
 						axisClass: 'ct-axis-title',
 						offset: {
 							x: 0,
@@ -225,7 +206,7 @@
 						textAnchor: 'middle'
 					},
 					axisY: {
-						axisTitle: 'Reach',
+						axisTitle: 'Рассылки',
 						axisClass: 'ct-axis-title',
 						offset: {
 							x: 0,
@@ -327,4 +308,5 @@
 	});
 	</script>
 </body>
+
 </html>

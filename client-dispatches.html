@@ -22,7 +22,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 </head>
 
-<body>
+<body style="min-width: 550px">
 	<!-- WRAPPER -->
 	<div id="wrapper">
 		<!-- NAVBAR -->
@@ -84,7 +84,7 @@
 			</button>
 			<div class="sidebar-scroll">
 				<div class="user-account">
-					<div class="img-responsive img-circle user-photo" style="background: url(assets/img/Admin.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;"></div>
+					<div class="img-responsive img-circle user-photo" style="background: url(assets/img/user.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;"></div>
 					<div class="dropdown">
 						<a href="#" class="dropdown-toggle user-name" data-toggle="dropdown"> <h3><strong>User</strong></h3> <i class="fa fa-caret-down"></i></a>
 						<ul class="dropdown-menu dropdown-menu-right account">
@@ -98,12 +98,12 @@
 				</div>
 				<nav id="left-sidebar-nav" class="sidebar-nav">
 					<ul id="main-menu" class="metismenu">
-						<li class=""><a href="#"><i class="lnr lnr-users"></i> <span>Главная</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-plus-circle"></i> <span>Новая рассылка</span></a></li>
+						<li class=""><a href="client-index.html"><i class="lnr lnr-users"></i> <span>Главная</span></a></li>
+						<li class=""><a href="client-new-disp.html"><i class="lnr lnr-plus-circle"></i> <span>Новая рассылка</span></a></li>
 						<li class="active"><a href="#"><i class="lnr lnr-bullhorn"></i> <span>Рассылки</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-book"></i> <span>Адресная книга</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-chart-bars"></i> <span>Статистика</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-cog"></i> <span>Настройки</span></a></li>
+						<li class=""><a href="addr-book.html"><i class="lnr lnr-book"></i> <span>Адресная книга</span></a></li>
+						<li class=""><a href="client-charts.html"><i class="lnr lnr-chart-bars"></i> <span>Статистика</span></a></li>
+						<li class=""><a href="client-settings.html"><i class="lnr lnr-cog"></i> <span>Настройки</span></a></li>
 					</ul>
 				</nav>
 				
@@ -113,8 +113,117 @@
 		<!-- MAIN CONTENT -->
 		<div id="main-content">
 			<div class="container-fluid">
-			
-		
+               <h1 class="margin-left-15">Рассылки</h1>
+                <div class="panel-content">
+                    <div class="row">
+                      <div class="row">
+                          <div class="col col-sm-6">
+                              <a href="client-new-disp.html" class="btn btn-primary btn-block">Создать новую рассылку</a>
+                          </div>
+                          <div class="col col-sm-6">
+                              <a href="#" class="btn btn-default btn-block">Выгрузить в файл</a>
+                          </div>
+                       </div>
+                       <br>
+                       <div class="btn-group btn-group-justified">
+                           <a href="#" class="btn btn-default">по названию <span class="caret"></span></a>
+                           <a href="#" class="btn btn-default">по состоянию <span class="caret"></span></a>
+                           <a href="#" class="btn btn-default">по дате создания<span class="caret"></span></a>
+                           <a href="#" class="btn btn-default">по дате старта <span class="caret"></span></a>
+                           <a href="#" class="btn btn-default">по дате окончания <span class="caret"></span></a>
+                       </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table no-margin">
+                                <thead>
+                                    <tr>
+                                        <th>№</th>
+                                        <th>Текст</th>
+                                        <th>Дата создания рассылки</th>
+                                        <th>Состояние</th>
+                                        <th>Количество сообщений</th>
+                                        <th>Количество отправленных</th>
+                                        <th>Количество доставленных</th>
+                                        <th>Дата старта</th>
+                                        <th>Дата окончания</th>
+                                        <th>Действие</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>В период с 01.05 по 11.05 в городе Донецк пройдет ...</td>
+                                        <td>28.04.2018</td>
+                                        <td>Окончена</td>
+                                        <td>426 000</td>
+                                        <td>426 000</td>
+                                        <td>417 924</td>
+                                        <td>29.04.2018</td>
+                                        <td>30.04.2018</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>В период с 01.05 по 11.05 в городе Макеевка пройдет ...</td>
+                                        <td>28.04.2018</td>
+                                        <td>Окончена</td>
+                                        <td>320 000</td>
+                                        <td>320 000</td>
+                                        <td>311 934</td>
+                                        <td>29.04.2018</td>
+                                        <td>30.04.2018</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>В период с 01.05 по 11.05 в городе Дебальцево пройдет ...</td>
+                                        <td>28.04.2018</td>
+                                        <td>Окончена</td>
+                                        <td>136 450</td>
+                                        <td>136 450</td>
+                                        <td>121 413</td>
+                                        <td>29.04.2018</td>
+                                        <td>29.04.2018</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>В период с 01.05 по 11.05 в городе Ясиноватая пройдет ...</td>
+                                        <td>28.04.2018</td>
+                                        <td>Окончена</td>
+                                        <td>86 005</td>
+                                        <td>86 005</td>
+                                        <td>75 843</td>
+                                        <td>29.04.2018</td>
+                                        <td>29.04.2018</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>В период с 01.05 по 11.05 в городе Тельманово пройдет ...</td>
+                                        <td>28.04.2018</td>
+                                        <td>Окончена</td>
+                                        <td>45 000</td>
+                                        <td>45 000</td>
+                                        <td>42 000</td>
+                                        <td>29.04.2018</td>
+                                        <td>29.04.2018</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- PAGINATOR -->
+                    <ul class="pager">
+                        <li class="previous disabled"><a href="#">Назад</a></li>
+                        <li class="next"><a href="#">Вперед</a></li>
+                    </ul>
+                    <!-- END PAGINATOR -->
+                </div>
 	        </div>
 		</div>
 		<!-- END MAIN CONTENT -->

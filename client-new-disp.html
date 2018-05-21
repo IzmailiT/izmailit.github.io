@@ -101,12 +101,12 @@
 				</div>
 				<nav id="left-sidebar-nav" class="sidebar-nav">
 					<ul id="main-menu" class="metismenu">
-						<li class=""><a href="#"><i class="lnr lnr-users"></i> <span>Главная</span></a></li>
+						<li class=""><a href="client-index.html"><i class="lnr lnr-users"></i> <span>Главная</span></a></li>
 						<li class="active"><a href="#"><i class="lnr lnr-plus-circle"></i> <span>Новая рассылка</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-bullhorn"></i> <span>Рассылки</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-book"></i> <span>Адресная книга</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-chart-bars"></i> <span>Статистика</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-cog"></i> <span>Настройки</span></a></li>
+						<li class=""><a href="client-dispatches.html"><i class="lnr lnr-bullhorn"></i> <span>Рассылки</span></a></li>
+						<li class=""><a href="addr-book.html"><i class="lnr lnr-book"></i> <span>Адресная книга</span></a></li>
+						<li class=""><a href="client-charts.html"><i class="lnr lnr-chart-bars"></i> <span>Статистика</span></a></li>
+						<li class=""><a href="client-settings.html"><i class="lnr lnr-cog"></i> <span>Настройки</span></a></li>
 					</ul>
 				</nav>
 				
@@ -116,79 +116,82 @@
 		<!-- MAIN CONTENT -->
 		<div id="main-content">
 			<div class="container-fluid">
-                <h1>Новая рассылка</h1>
+                <h1 class="margin-left-15">Новая рассылка</h1>
 			    <div class="panel-content">
 			        <form action="#">
                         <!-- LEFT PART -->
-			            <div class="col-md-6">
-			                <div class="form-group">
-                                <label>Текст сообщения:</label>
-                                <textarea class="form-control" name="" id="" cols="30" rows="10" minlength="5" maxlength="140" required></textarea>
-			                </div>
-			                <div class="form-group">
-			                    <label>Дата отправки:</label>
-			                    <div class="input-group date" data-date-autoclosure="true" id="datetimepicker-new" data-provide="datepicker">
-			                        <input type="text" class="form-control">
-                                    <span class="input-group-addon">
-                                        <i class="fa fa-calendar"></i>
-                                    </span>
-			                    </div>
-			                </div>
-			                <div class="form-group">
-			                    <label>Абоненты:</label>
-			                    <div class="fancy-radio"><label><input name="sposob-vvoda" type="radio" checked><span><i></i>Ручной ввод номеров</span></label></div>
-			                    
-			                    <div class="from-group level-two"><input type="text" class="form-control"></div>
-			                    
-			                    <div class="fancy-radio"><label><input name="sposob-vvoda" type="radio"><span><i></i>Адресная книга</span></label></div>
-			                    
-			                    <div class="from-group level-two">
-			                        <select name="addr-book" id="addr-book" class="form-control">
-			                            <option value="1">Адресная книга 1</option>
-			                            <option value="2">Адресная книга 2</option>
-			                            <option value="3">Адресная книга 3</option>
-			                        </select>
-			                    </div>
-			                    
-			                    <div class="fancy-radio"><label><input name="sposob-vvoda" type="radio"><span><i></i>Из файла</span></label></div>
-			                    
-			                    <div class="form-group level-two">
-			                        <input class="form-control" type="file">
-			                    </div>
-			                    <div class="form-group level-two">
-			                        <select multiple id="left-spisok" class="form-control">
-			                            <option value="0713598743">0713598743</option>
-			                            <option value="0718645606">0718645606</option>
-			                            <option value="0714382400">0714382400</option>
-			                            <option value="0713388543">0713388543</option>
-			                        </select>
-			                    </div>
-			                    
-			                </div>
-			            </div>
-			            <!-- END LEFT PART -->
-			            <!-- RIGHT PART -->
-			            <div class="col-md-6">
-                           <div class="col-md-3"></div>
-                            <div class="col-md-3 move-buttons">
+			            <div class="row">
+			                <div class="col-md-6">
                                 <div class="form-group">
-                                    <div class="btn btn-warning">Все</div>
-                                    <div class="btn btn-warning"> &gt; </div>
-                                    <div class="btn btn-warning"> &lt; </div>
-                                    <div class="btn btn-warning"> &times; </div>
+                                    <label>Текст сообщения:</label>
+                                    <textarea class="form-control" name="" id="" cols="30" rows="10" minlength="5" maxlength="140" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Дата отправки:</label>
+                                    <div class="input-group date" data-date-autoclosure="true" id="datetimepicker-new" data-provide="datepicker">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Абоненты:</label>
+                                    <div class="fancy-radio"><label><input name="sposob-vvoda" type="radio" checked><span><i></i>Ручной ввод номеров</span></label></div>
+
+                                    <div class="from-group level-two"><input type="text" class="form-control"></div>
+
+                                    <div class="fancy-radio"><label><input name="sposob-vvoda" type="radio"><span><i></i>Адресная книга</span></label></div>
+
+                                    <div class="from-group level-two">
+                                        <select name="addr-book" id="addr-book" class="form-control">
+                                            <option value="1">Адресная книга 1</option>
+                                            <option value="2">Адресная книга 2</option>
+                                            <option value="3">Адресная книга 3</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="fancy-radio"><label><input name="sposob-vvoda" type="radio"><span><i></i>Из файла</span></label></div>
+
+                                    <div class="form-group level-two">
+                                        <input class="form-control" type="file">
+                                    </div>
+                                    <div class="form-group level-two">
+                                        <select multiple id="left-spisok" class="form-control">
+                                            <option value="0713598743">0713598743</option>
+                                            <option value="0718645606">0718645606</option>
+                                            <option value="0714382400">0714382400</option>
+                                            <option value="0713388543">0713388543</option>
+                                        </select>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-md-9">
-                                <div class="form-group">
-                                    <select multiple name="numbers" id="right-spisok" class="form-control">
-                                        <option value="0713388653">0713388653</option>
-                                        <option value="0713298502">0713298502</option>
-                                        <option value="0719948576">0719948576</option>
-                                    </select>
+                            <!-- END LEFT PART -->
+                            <!-- RIGHT PART -->
+                            <div class="col-md-6">
+                               <div class="col-md-3"></div>
+                                <div class="col-md-3 move-buttons">
+                                    <div class="form-group">
+                                        <div class="btn btn-warning">Все</div>
+                                        <div class="btn btn-warning"> &gt; </div>
+                                        <div class="btn btn-warning"> &lt; </div>
+                                        <div class="btn btn-warning"> &times; </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <select multiple name="numbers" id="right-spisok" class="form-control">
+                                            <option value="0713388653">0713388653</option>
+                                            <option value="0713298502">0713298502</option>
+                                            <option value="0719948576">0719948576</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- END RIGHT PART -->
 			            </div>
-			            <!-- END RIGHT PART -->
+			            
 			            
 			            <div class="col-sm-2 col-sm-offset-5">
 			                <div class="submit-btn">

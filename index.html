@@ -78,7 +78,7 @@
 		<!-- END NAVBAR -->
 		<!-- LEFT SIDEBAR -->
 		<div id="left-sidebar" class="sidebar">
-			<button type="button" class="btn btn-xs btn-link btn-toggle-fullwidth" style="left: 220px;">
+			<button type="button" class="btn btn-xs btn-link btn-toggle-fullwidth">
 				<span class="sr-only">Toggle Fullwidth</span>
 				<i class="fa fa-angle-left"></i>
 			</button>
@@ -98,16 +98,10 @@
 				</div>
 				<nav id="left-sidebar-nav" class="sidebar-nav">
 					<ul id="main-menu" class="metismenu">
-						<li class="active"><a href="#"><i class="lnr lnr-users"></i> <span>Пользователи</span></a></li>
+						<li class=""><a href="#"><i class="lnr lnr-users"></i> <span>Пользователи</span></a></li>
 						<li class=""><a href="#"><i class="lnr lnr-apartment"></i> <span>Предприятия</span></a></li>
-						<li class="">
-							<a href="#uiElements" class="has-arrow" aria-expanded="false"><i class="lnr lnr-chart-bars"></i> <span>Статистика</span></a>
-							<ul aria-expanded="true">
-								<li class=""><a href="#">Пользователи</a></li>
-								<li class=""><a href="#">Предприятия</a></li>
-								<li class=""><a href="#">Рассылки</a></li>
-								<li class=""><a href="#"><span>Прочее</span></a></li>
-							</ul>
+						<li class="active">
+							<a href="#"><i class="lnr lnr-chart-bars"></i> <span>Статистика</span></a>
 						</li>
 						<li class=""><a href="#"><i class="lnr lnr-cog"></i> <span>Настройки</span></a></li>
 					</ul>
@@ -261,7 +255,7 @@
 				<!-- SALES SUMMARY -->
 				<div class="dashboard-section">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<div class="panel-content">
 								<h3 class="heading">Последние рассылки</h3>
 								<div class="table-responsive">
@@ -316,61 +310,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
-							<div class="panel-content">
-								<h3 class="heading"><i class="fa fa-square"></i> Top Products</h3>
-								<div id="chart-top-products" class="chartist"></div>
-							</div>
-						</div>
 					</div>
 				</div>
 				<!-- END SALES SUMMARY -->
-				<!-- CAMPAIGN -->
-				<div class="dashboard-section">
-					<div class="panel-content">
-						<div class="row margin-bottom-15">
-							<div class="col-md-6 col-sm-7 left">
-								<div id="demo-line-chart" class="ct-chart"></div>
-							</div>
-							<div class="col-md-4 col-sm-5 right">
-								<div class="row margin-bottom-30">
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">Impression</span>
-											<br><strong>32,743</strong></p>
-									</div>
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">Clicks</span>
-											<br><strong>1423</strong></p>
-									</div>
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">CTR</span>
-											<br><strong>4,34%</strong></p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">Cost</span>
-											<br><strong>$42.69</strong></p>
-									</div>
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">CPC</span>
-											<br><strong>$0,03</strong></p>
-									</div>
-									<div class="col-xs-4">
-										<p class="text-right text-larger"><span class="text-muted">Budget</span>
-											<br><strong>$200</strong></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- END CAMPAIGN -->
+				
 				<!-- SOCIAL -->
 				<div class="dashboard-section no-margin">
 					<div class="section-heading clearfix">
 						<h2 class="section-title"><i class="fa fa-user-circle"></i>Активность сервиса <span class="section-subtitle">(7-дневный отчет)</span></h2>
-						<a href="#" class="right">Узнать подробности</a>
 					</div>
 					<div class="panel-content">
 						<div class="row">

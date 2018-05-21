@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Phoenix | Статистика</title>
+	<title>Phoenix | Рассылки</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -84,7 +84,7 @@
 			</button>
 			<div class="sidebar-scroll">
 				<div class="user-account">
-					<div class="img-responsive img-circle user-photo" style="background: url(assets/img/Admin.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;"></div>
+					<div class="img-responsive img-circle user-photo" style="background: url(assets/img/user.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;"></div>
 					<div class="dropdown">
 						<a href="#" class="dropdown-toggle user-name" data-toggle="dropdown"> <h3><strong>User</strong></h3> <i class="fa fa-caret-down"></i></a>
 						<ul class="dropdown-menu dropdown-menu-right account">
@@ -98,12 +98,12 @@
 				</div>
 				<nav id="left-sidebar-nav" class="sidebar-nav">
 					<ul id="main-menu" class="metismenu">
-						<li class=""><a href="#"><i class="lnr lnr-users"></i> <span>Главная</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-plus-circle"></i> <span>Новая рассылка</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-bullhorn"></i> <span>Рассылки</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-book"></i> <span>Адресная книга</span></a></li>
+						<li class=""><a href="client-index.html"><i class="lnr lnr-users"></i> <span>Главная</span></a></li>
+						<li class=""><a href="client-new-disp.html"><i class="lnr lnr-plus-circle"></i> <span>Новая рассылка</span></a></li>
+						<li class=""><a href="client-dispatches.html"><i class="lnr lnr-bullhorn"></i> <span>Рассылки</span></a></li>
+						<li class=""><a href="addr-book.html"><i class="lnr lnr-book"></i> <span>Адресная книга</span></a></li>
 						<li class="active"><a href="#"><i class="lnr lnr-chart-bars"></i> <span>Статистика</span></a></li>
-						<li class=""><a href="#"><i class="lnr lnr-cog"></i> <span>Настройки</span></a></li>
+						<li class=""><a href="client-settings.html"><i class="lnr lnr-cog"></i> <span>Настройки</span></a></li>
 					</ul>
 				</nav>
 				
@@ -113,8 +113,85 @@
 		<!-- MAIN CONTENT -->
 		<div id="main-content">
 			<div class="container-fluid">
-			
-		
+                <h1 class="margin-left-15">Статистика пользователя</h1>
+                <!-- TOTAL SCORE -->
+                <div class="panel-content">
+                    <div class="row">
+                        <div class="col col-md-4">
+                            <p class="metric-inline">48<span>Рассылок</span></p>
+                        </div>
+                        <div class="col col-md-4">
+                            <p class="metric-inline">7530<span>Сообщений</span></p>
+                        </div>
+                        <div class="col col-md-4">
+                            <p class="metric-inline">2<span>Привязанных компаний</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TOTAL SCORE -->
+                <div class="row">
+                    <div class="col col-md-8">
+                        <div class="panel-content">
+                           <h2 class="heading">Последние рассылки</h2>
+                            <div class="table-responsive">
+                                <table class="table table-striped no-margin">
+                                    <thead>
+                                        <tr>
+                                            <th>ID рассылки</th>
+                                            <th>Компания</th>
+                                            <th>Кол-во SMS</th>
+                                            <th>Дата начала</th>
+                                            <th>Статус</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#">2018047648</a></td>
+                                            <td>ООО "Первая"</td>
+                                            <td>122</td>
+                                            <td>04/07/2018</td>
+                                            <td><span class="label label-info">В процессе</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">2018047649</a></td>
+                                            <td>ООО "Вторая"</td>
+                                            <td>62</td>
+                                            <td>04/04/2018</td>
+                                            <td><span class="label label-info">В процессе</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">2018047650</a></td>
+                                            <td>ООО "Первая"</td>
+                                            <td>34</td>
+                                            <td>04/03/2018</td>
+                                            <td><span class="label label-danger">Отменена</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">2018047651</a></td>
+                                            <td> ЧП "Четвертая"</td>
+                                            <td>186</td>
+                                            <td>03/29/2018</td>
+                                            <td><span class="label label-success">Выполнена</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">2018047652</a></td>
+                                            <td>ОАО "Седьмая"</td>
+                                            <td>362</td>
+                                            <td>03/27/2018</td>
+                                            <td><span class="label label-success">Выполнена</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4">
+                        <div class="panel-content">
+                            <h2 class="heading">Рассылки по компаниям</h2>
+                            <div class="ct-chart" id="companies-pie-chart"></div>
+                        </div>
+                    </div>
+                </div>
 	        </div>
 		</div>
 		<!-- END MAIN CONTENT -->
@@ -167,15 +244,15 @@
 
 		// traffic sources
 		var dataPie = {
-			series: [45, 25, 30]
+			series: [19, 14, 15]
 		};
 
-		var labels = ['Раз', 'Два', 'Три'];
+		var labels = ['Первая', 'Вторая', 'Третяя'];
 		var sum = function(a, b) {
 			return a + b;
 		};
 
-		new Chartist.Pie('#demo-pie-chart', dataPie, {
+		new Chartist.Pie('#companies-pie-chart', dataPie, {
 			height: "270px",
 			labelInterpolationFnc: function(value, idx) {
 				var percentage = Math.round(value / dataPie.series.reduce(sum) * 100) + '%';

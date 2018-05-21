@@ -247,7 +247,7 @@
 	}
 }
 
-#navbar-search {
+#navbar-search, #users-search {
 	float: left;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -255,6 +255,11 @@
 	@include max-screen($break-small - 1px) {
 		display: none;
 	}
+}
+
+#users-search {
+    margin: 0 !important;
+    margin-top: -50px !important;
 }
 
 #navbar-menu {

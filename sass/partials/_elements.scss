@@ -35,6 +35,15 @@
     }
 }
 
+.select-user {
+    float: right;
+    margin-top: -57px;
+    
+    @include max-screen($break-1024) {
+        display: none;
+    }
+}
+
 .kwc-text {
     border-radius: 5px;
     border: 3px solid #9b59b6;
@@ -94,6 +103,10 @@ span.kwc-inner-tail {
 		display: block;
 		font-size: 20px;
 	}
+}
+
+li.next > a {
+    color: #5a5a5a;
 }
 
 .separator-linethrough {
