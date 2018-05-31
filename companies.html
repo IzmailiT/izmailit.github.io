@@ -113,7 +113,112 @@
 		<!-- MAIN CONTENT -->
 		<div id="main-content">
 			<div class="container-fluid">
-			
+			    <div class="row">
+                    <!-- LEFT COLUMN -->
+			        <div class="col col-md-6">
+			            <div class="panel-content">
+			                <div class="row">
+			                    <h2 class="heading">Предприятия</h2>
+                                <div class="select-user col-md-6">
+                                    <!-- search form -->
+                                    <form action="#" class="search-form">
+                                        <input type="text" value="" class="form-control" placeholder="Искать...">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                    </form>
+                                    <!-- end search form -->
+                                </div>
+                                
+                                <div class="btn-group btn-group-justified">
+                                    <a href="#" class="btn btn-default">По алфавиту <span class="caret"></span></a>
+                                    <a href="#" class="btn btn-default">По кол-ву пользователей <span class="caret"></span></a>
+                                    <!-- <a href="#" class="btn btn-default">По городам <span class="caret"></span></a> -->
+                                </div>
+                                
+                                <br>
+                                
+                                <div class="col">
+                                    <div class="users-wrap">
+                                        <a href="#" class="btn-justified users-block"><span>Company name</span></a>
+                                        <a href="#" class="btn-justified users-block"><span>Company name</span></a>
+                                        <a href="#" class="btn-justified users-block"><span>Company name</span></a>
+                                        <a href="#" class="btn-justified users-block"><span>Company name</span></a>
+                                        <a href="#" class="btn-justified users-block"><span>Company name</span></a>
+                                    </div>
+                                </div>
+                                
+                                <br>
+                                
+                                <!-- PAGINATOR -->
+                                <ul class="pager">
+                                    <li class="previous disabled"><a href="#">Назад</a></li>
+                                    <li class="next"><a href="#">Вперед</a></li>
+                                </ul>
+                                <!-- END PAGINATOR -->
+			                </div>
+			            </div>
+			        </div>
+			        <!-- END LEFT COLUMN -->
+			        <!-- RIGHT COLUMN -->
+			        <div class="col col-md-6">
+			            <div class="">
+			                <div class="user-overview">
+                                <br>
+			                    <div class="col" style="text-align: center">
+			                        <h2>Username</h2>
+			                        <h5>По идее здесь краткое описание компании</h5>
+			                    </div>
+			                    <br>
+			                    <div class="col-md-12">
+			                        <div class="row t-b-borders user-overview">
+                                        <br>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="control-label">Email компании:</label>
+			                                    <p class="form-control-static">example@site.com</p>
+			                                </div>
+			                                <div class="form-group">
+			                                    <label class="control-label">Город:</label>
+			                                    <p class="form-control-static">Донецк</p>
+			                                </div>
+			                                <div class="form-group">
+			                                    <label class="control-label">№ договора:</label>
+			                                    <p class="form-control-static">2018040100256</p>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="control-label">Телефон компании:</label>
+			                                    <p class="form-control-static">+380713214455</p>
+			                                </div>
+			                                <div class="form-group">
+			                                    <label class="control-label">Дата договора:</label>
+			                                    <p class="form-control-static">01.04.2018</p>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="col-md-12">
+			                        <div class="row user-overview">
+                                        <br>
+			                            <div class="col-md-12">
+			                                <div class="form-group">
+                                                <label class="control-label">Привязанные пользователи:</label>
+                                                <p class="form-control-static">
+                                                    <a href="#">Andrew</a>, 
+                                                    <a href="#">John</a>, 
+                                                    <a href="#">William</a>
+                                                </p>
+                                            </div>
+                                            <br>
+			                            </div>
+                                        <br>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			        <!-- END RIGHT COLUMN -->
+			    </div>
 		    </div>
 		</div>
 		<!-- END MAIN CONTENT -->
@@ -300,10 +405,10 @@
 
 
 		// notification popup
-		toastr.options.closeButton = true;
-		toastr.options.positionClass = 'toast-bottom-right';
-		toastr.options.showDuration = 1000;
-		toastr['info']('Здравствуй, это панель управления сервисом.');
+		//toastr.options.closeButton = true;
+		//toastr.options.positionClass = 'toast-bottom-right';
+		//toastr.options.showDuration = 1000;
+		//toastr['info']('Здравствуй, это панель управления сервисом.');
 
 	});
 	</script>

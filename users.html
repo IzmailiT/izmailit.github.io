@@ -114,6 +114,7 @@
 		<div id="main-content">
 			<div class="container-fluid">
 			    <div class="row">
+                    <!-- LEFT COLUMN -->
 			        <div class="col col-md-6">
 			            <div class="panel-content">
 			                <div class="row">
@@ -132,12 +133,87 @@
                                     <a href="#" class="btn btn-default">По дате <span class="caret"></span></a>
                                     <a href="#" class="btn btn-default">По роли <span class="caret"></span></a>
                                 </div>
+                                
+                                <br>
+                                
+                                <div class="col">
+                                    <div class="users-wrap">
+                                        <a href="#" class="btn-justified users-block"><img src="assets/img/Admin.jpg" style="background: url(assets/img/Admin.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;" alt=""><span>Username</span></a>
+                                        <a href="#" class="btn-justified users-block"><img src="assets/img/Admin.jpg" style="background: url(assets/img/Admin.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;" alt=""><span>Username</span></a>
+                                        <a href="#" class="btn-justified users-block"><img src="assets/img/Admin.jpg" style="background: url(assets/img/Admin.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;" alt=""><span>Username</span></a>
+                                        <a href="#" class="btn-justified users-block"><img src="assets/img/Admin.jpg" style="background: url(assets/img/Admin.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;" alt=""><span>Username</span></a>
+                                        <a href="#" class="btn-justified users-block"><img src="assets/img/Admin.jpg" style="background: url(assets/img/Admin.jpg)100% 100% no-repeat; background-size: cover; background-position: center center;" alt=""><span>Username</span></a>
+                                    </div>
+                                </div>
+                                
+                                <br>
+                                
+                                <!-- PAGINATOR -->
+                                <ul class="pager">
+                                    <li class="previous disabled"><a href="#">Назад</a></li>
+                                    <li class="next"><a href="#">Вперед</a></li>
+                                </ul>
+                                <!-- END PAGINATOR -->
 			                </div>
 			            </div>
 			        </div>
+			        <!-- END LEFT COLUMN -->
+			        <!-- RIGHT COLUMN -->
 			        <div class="col col-md-6">
-			            <div class="panel-content"></div>
+			            <div class="">
+			                <div class="user-overview">
+                                <br>
+			                    <div class="col" style="text-align: center"><img class="profile-image" src="assets/img/Admin.jpg" style="background: url(assets/img/Admin.jpg) 100% 100% no-repeat; background-size: cover; background-position: center center;" alt=""><h2>Username</h2></div>
+			                    <br>
+			                    <div class="col-md-12">
+			                        <div class="row t-b-borders user-overview">
+                                        <br>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="control-label">Email:</label>
+			                                    <p class="form-control-static">example@site.com</p>
+			                                </div>
+			                                <div class="form-group">
+			                                    <label class="control-label">Дата регистрации:</label>
+			                                    <p class="form-control-static">20.03.2018</p>
+			                                </div>
+			                            </div>
+			                            <div class="col-md-6">
+			                                <div class="form-group">
+			                                    <label class="control-label">Телефон:</label>
+			                                    <p class="form-control-static">+380713214455</p>
+			                                </div>
+			                                <div class="form-group">
+			                                    <label class="control-label">Роль в системе:</label>
+			                                    <select name="is_admin" id="" class="form-control">
+			                                        <option value="0">Пользователь</option>
+			                                        <option value="1">Администратор</option>
+			                                    </select>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="col-md-12">
+			                        <div class="row user-overview">
+                                        <br>
+			                            <div class="col-md-12">
+			                                <div class="form-group">
+                                                <label class="control-label">Привязанные компании:</label>
+                                                <p class="form-control-static">
+                                                    <a href="#">Компания №1</a>, 
+                                                    <a href="#">Компания №2</a>, 
+                                                    <a href="#">Компания №3</a>
+                                                </p>
+                                            </div>
+                                            <br>
+			                            </div>
+                                        <br>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
 			        </div>
+			        <!-- END RIGHT COLUMN -->
 			    </div>
 		    </div>
 		</div>
@@ -166,7 +242,6 @@
 
 		// sparkline charts
 		var sparklineNumberChart = function() {
-
 			var params = {
 				width: '140px',
 				height: '30px',
@@ -325,10 +400,10 @@
 
 
 		// notification popup
-		toastr.options.closeButton = true;
-		toastr.options.positionClass = 'toast-bottom-right';
-		toastr.options.showDuration = 1000;
-		toastr['info']('Здравствуй, это панель управления сервисом.');
+		//toastr.options.closeButton = true;
+		//toastr.options.positionClass = 'toast-bottom-right';
+		//toastr.options.showDuration = 1000;
+		//toastr['info']('Здравствуй, это панель управления сервисом.');
 
 	});
 	</script>

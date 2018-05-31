@@ -85,6 +85,44 @@ span.kwc-inner-tail {
     }
 }
 
+.users-block {
+    display: block;
+    //border: 1px solid red;
+    padding: 10px 20px;
+    
+    & > img {
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+    }
+    
+    & > span {
+        margin-left: 20px;
+        color: $font-color;
+        font-size: 1.2em;
+    }
+    
+    &:hover, &:active {
+        background-color: #f5f5f5;    //darken($color-background, 10%);
+    }
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: left;
+}
+
+.t-b-borders {
+    border-top: 2px solid darken($color-background, 10%);
+    border-bottom: 2px solid darken($color-background, 10%);
+}
+
+.user-overview {
+    background-color: #f5f5f5;
+}
+
 .metric-inline {
 	@include border-radius(3px);
 	
